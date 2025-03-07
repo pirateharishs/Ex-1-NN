@@ -37,25 +37,35 @@ STEP 5:Normalizing the data<BR>
 STEP 6:Splitting the data into test and train<BR>
 
 ##  PROGRAM:
-import pandas as pd                                             
+
+```Python
+import pandas as pd                                                 
 import io
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
-df=pd.read_csv("Churn_Modelling.csv",index_col="RowNumber")
+df=pd.read_csv("Churn_Modelling.csv",index_col="RowNumber")        
 df.head()
-df.isnull().sum()   
+```
+```Python
+df.isnull().sum()                                                   
+```
+```Python                                               
+df.duplicated().sum()                                             
+```
+```Python                                              
 df=df.drop(['Surname', 'Geography','Gender'], axis=1)               
 scaler=StandardScaler()                                            
 df=pd.DataFrame(scaler.fit_transform(df))
 df.head()
-X,Y=df.iloc[:,:-1].values ,df.iloc[:,-1].values                     
+```
+```Python
+X,Y=df.iloc[:,:-1].values ,df.iloc[:,-1].values                  
 print('Input:\n',X,'\nOutput:\n',Y) 
-Xtrain,Xtest,Ytrain,Ytest = train_test_split(X, Y, test_size=0.2)   
-print("Xtrain:\n" ,Xtrain, "\nXtest:\n", Xtest)                    
-print("\nYtrain:\n" ,Ytrain, "\nYtest:\n", Ytest)  
-                     
-
+Xtrain,Xtest,Ytrain,Ytest = train_test_split(X, Y, test_size=0.2)  
+print("Xtrain:\n" ,Xtrain, "\nXtest:\n", Xtest)                     
+print("\nYtrain:\n" ,Ytrain, "\nYtest:\n", Ytest)                   
+```
 ## OUTPUT:
 ### DATASET:
 ![image](https://github.com/user-attachments/assets/4e75215a-6909-47e8-be89-f1b0dcf64069)
