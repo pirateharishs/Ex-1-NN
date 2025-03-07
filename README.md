@@ -1,8 +1,8 @@
-<H3>ENTER YOUR NAME</H3>:HARISH S
-<H3>ENTER YOUR REGISTER NO.</H3>:212223230071
-<H3>EX. NO.1</H3>:01
-<H3>DATE</H3>:07/03/25
-<H1 ALIGN =CENTER> Introduction to Kaggle and Data preprocessing</H1>
+## ENTER YOUR NAME:HARISH S
+## ENTER YOUR REGISTER NO.</H3>:212223230071
+## EX. NO.1:01
+## DATE:07/03/25
+# Introduction to Kaggle and Data preprocessing
 
 ## AIM:
 
