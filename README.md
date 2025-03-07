@@ -1,8 +1,8 @@
-## ENTER YOUR NAME:HARISH S
-## ENTER YOUR REGISTER NO:212223230071
+## ENTER YOUR NAME:   HARISH S
+## ENTER YOUR REGISTER NO:   212223230071
 ## EX. NO.1
 ## DATE:07/03/25
-# Introduction to Kaggle and Data preprocessing
+#   Introduction to Kaggle and Data preprocessing
 
 ## AIM:
 
